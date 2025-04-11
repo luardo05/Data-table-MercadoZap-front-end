@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Produtos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Usuarios</a>
+        <a href="product.html">Produtos</a>
+        <a href="market.html">Mercados</a>
+    </nav>
+
+    <h1>Produtos Cadastrados</h1>
+    <button id="addProductBtn">Adicionar Produto</button>
+
+    <table id="productsTable">
+        <thead>
+            <tr>
+                <th>Nome do Produto:</th>
+                <th>Mercado:</th>
+                <th>Marca:</th>
+                <th>Preço:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os usuários serão listados aqui via JS -->
+        </tbody>
+    </table>
+
+    <!-- Modal para adicionar/editar usuário -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Adicionar Produto</h2>
+            <form id="productForm">
+                <label for="nome_produto">Nome do produto:</label>
+                <input type="text" id="product_name" name="product_name" required>
+    
+                <label for="mercado">Mercado:</label>
+                <input type="text" id="market" name="market" required>
+    
+                <label for="marca">Marca:</label>
+                <input type="text" id="brand" name="brand" required>
+    
+                <label for="preco">Preço:</label>
+                <input type="text" id="price" name="price"  required>
+    
+                <button type="submit" id="saveProductBtn">Salvar</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/product.js"></script>
+</body>
+</html>
